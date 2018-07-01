@@ -10,7 +10,7 @@ class Solution(object):
         :rtype: int
         """
         # figure out how many digits there are
-        if x >= math.pow(2, 32) or x < -math.pow(2, 31): return 0
+        if x >= math.pow(2, 31) or x < -math.pow(2, 31): return 0
         num_digits = 1
         while abs(x) // math.pow(10, num_digits) != 0:
             num_digits += 1

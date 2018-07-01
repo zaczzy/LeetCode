@@ -5,14 +5,16 @@ class Solution:
         :type numRows: int
         :rtype: str
         """
+        if numRows == 1:
+            return s
         rows = []
         for _ in range(numRows):
             rows.append([])
         loop = 2 * numRows - 2
         for outer in range(len(s) // loop + 1):
             for inner in range(loop):
-                print(outer, inner)
-                rows[numRows - 1 - abs(inner - numRows + 1)].append(s[outer * loop + inner])
+                if outer * loop + inner < len(s):
+                    rows[numRows - 1 - abs(inner - numRows + 1)].append(s[outer * loop + inner])
         result = ""
         for row_num in range(len(rows)):
             result = result + ''.join(rows[row_num])
