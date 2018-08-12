@@ -1,5 +1,6 @@
 if __name__ == '__main__':
-    from longest_palindrome_dp import Solution
-    testStr = "abbab"
-    s = Solution()
-    print(s.longestPalindrome(testStr))
+    from isMatch import Solution
+    s = "aaaaaaaaaaab"
+    p = "a*a*a*a*a*ab"
+    sol = Solution()
+    print(sol.isMatch(s, p))
