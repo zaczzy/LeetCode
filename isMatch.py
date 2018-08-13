@@ -24,7 +24,8 @@ class Solution:
             # Case 1: char vs char + *
             if p0.islower() and p[1] == "*":
                 if s0 == p0:
-                    # it's possible that p0* is matching 0 or more
+                    # it's possible that p0 + * is matching 0 or multiple chars
+                    # originally i thought it was 0 or 1 or multiple, but case matching 1 is collapsed into multiple
                     return self.isMatch(s[1:], p) or self.isMatch(s, p[2:])
                 else:
                     return self.isMatch(s, p[2:])

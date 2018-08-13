@@ -1,6 +1,5 @@
 if __name__ == '__main__':
-    from isMatch import Solution
-    s = "aaaaaaaaaaab"
-    p = "a*a*a*a*a*ab"
+    from containerMostWater import Solution
+    height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
     sol = Solution()
-    print(sol.isMatch(s, p))
+    print(sol.maxArea(height))
