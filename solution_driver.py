@@ -1,4 +1,5 @@
 if __name__ == '__main__':
-    from intToRoman import Solution
+    from productExceptSelf import Solution
     sol = Solution()
-    print(sol.intToRoman(1994))
+    nums = [1, 2, 3, 4]
+    print(sol.productExceptSelf(nums))
