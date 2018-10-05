@@ -10,7 +10,7 @@ class ListNode(object):
         num_str = ""
         cursor = self
         while cursor is not None:
-            num_str += str(cursor.val)
+            num_str = str(cursor.val) + num_str
             cursor = cursor.next
         return num_str
 
