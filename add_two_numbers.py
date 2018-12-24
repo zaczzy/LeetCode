@@ -1,6 +1,7 @@
 # Definition for singly-linked list.
 from math import pow
 
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
